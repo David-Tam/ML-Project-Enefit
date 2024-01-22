@@ -30,3 +30,7 @@ A horizontal bar plot is used to see the importance of feature (top 20).
 
 ### 3. LightBGM
 Similar structure as XGBoost section, but with LightBGM algorithm.
+![alt text](images/lightgbm.png)
+![alt text](images/lightgbm2.png)
+![alt text](images/lightgbm3.png)
+![alt text](images/lightgbm4.png)
