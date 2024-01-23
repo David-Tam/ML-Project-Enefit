@@ -8,13 +8,13 @@ Some of the datasets are too large to upload, but they can be downloaded here:
 https://www.kaggle.com/competitions/predict-energy-behavior-of-prosumers/data
 
 In general, there are 3 sections in the code:
-1. Data preparation:
+**1. Data preparation:**
    Data cleaning, sorting and feature engineering, followed by data splitting for training and validation.
    
-2. XGBoost approach:
+**2. XGBoost approach:**
    Applying XGBoost algorithm for training and evaluation of the model.
    
-3. LightGBM approach:
+**3. LightGBM approach:**
    Applying LightGBM algorithm for training and evaluation of the model.
 
 ## 1. Data preparation and feature engineering
