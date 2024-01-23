@@ -12,10 +12,16 @@ In general, there are 3 sections in the code:
 ### 1. Data preparation and feature engineering
 This section aims to combine all datasets into one that can be trained by the model.
 
-Data loading, cleaning and sorting are performed. Feature engineering is performed such that the prediction based on number of days before the day of prediction.
+Data loading, 
+![alt text](images/load_data.png)
+![alt text](images/load_data2.png)
+
+cleaning and sorting are performed. Feature engineering is performed such that the prediction based on number of days before the day of prediction.
+![alt text](images/features.png)
+![alt text](images/features2.png)
 
 78.25% of the data was used for training. "Target" (energy comsumption/production amount) is the response variable while all other features are explanatory.
-
+![alt text](images/tr_val_data_splitting.png)
 
 ### 2. XGBoost
 Applying XGBoost algorithm to train on the training set and generate a fit for prediction. Categorical data are allowed and 1500 gradient boosted trees are used with 100 early stopping rounds. Note that MAE (L1 distance) is calculated for evaluation on the model performance.
