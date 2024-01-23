@@ -24,12 +24,15 @@ This section aims to combine all datasets into one that can be trained by the mo
 First of all, let's load up all datasets:
 ![alt text](images/load_data.png)
 
-For each dataset, its shape and first observation is printed out:
+For each dataset, its shape and first observation are printed out:
 ![alt text](images/load_data2.png)
 
-cleaning and sorting are performed. Feature engineering is performed such that the prediction based on number of days before the day of prediction.
+Data cleaning, sorting and grouping are then performed (The code is too long, please look at the code).
 
+Followed by feature engineering such that the prediction based on number of days ago:
 ![alt text](images/features.png)
+
+At the end, there are 59 features can be used as explanatory varibles:
 ![alt text](images/features2.png)
 
 78.25% of the data was used for training. "Target" (energy comsumption/production amount) is the response variable while all other features are explanatory.
