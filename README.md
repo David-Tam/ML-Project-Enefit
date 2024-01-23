@@ -21,8 +21,10 @@ In general, there are 3 sections in the code:
 ## 1. Data preparation and feature engineering
 This section aims to combine all datasets into one that can be trained by the model.
 
-Load all datasets:
+First of all, let's load up all datasets:
 ![alt text](images/load_data.png)
+
+For each dataset, its shape and first observation is printed out:
 ![alt text](images/load_data2.png)
 
 cleaning and sorting are performed. Feature engineering is performed such that the prediction based on number of days before the day of prediction.
