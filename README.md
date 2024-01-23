@@ -29,15 +29,15 @@ For each dataset, its shape and first observation are printed out:
 
 Data cleaning, sorting and grouping are then performed (The code is too long, please look at the code).
 
-Followed by feature engineering such that the prediction based on number of days ago:
-![alt text](images/features.png)
-
-At the end, there are 59 features can be used as explanatory varibles:
-![alt text](images/features2.png)
-
-78.25% of the data was used for training. "Target" (energy comsumption/production amount) is the response variable while all other features are explanatory.
+Feature "data_block_id" is used for data splitting. Observations with data_block_id = 0 to 499 are for training while the rest are for validation. 78.25% of the data was used for training.
 
 ![alt text](images/tr_val_data_splitting.png)
+
+From feature engineering, prediction can also be based on the energy usage ("target") certain days ago:
+![alt text](images/features.png)
+
+At the end, "Target" (energy comsumption/production amount) is the response variable, while 59 features are used as explanatory varibles:
+![alt text](images/features2.png)
 
 ## 2. XGBoost
 Applying XGBoost algorithm to train on the training set and generate a fit for prediction. Categorical data are allowed and 1500 gradient boosted trees are used with 100 early stopping rounds. Note that MAE (L1 distance) is calculated for evaluation on the model performance.
