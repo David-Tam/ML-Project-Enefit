@@ -34,7 +34,7 @@ cleaning and sorting are performed. Feature engineering is performed such that t
 
 ![alt text](images/tr_val_data_splitting.png)
 
-### 2. XGBoost
+## 2. XGBoost
 Applying XGBoost algorithm to train on the training set and generate a fit for prediction. Categorical data are allowed and 1500 gradient boosted trees are used with 100 early stopping rounds. Note that MAE (L1 distance) is calculated for evaluation on the model performance.
 ![alt text](images/xgboost.png)
 ![alt text](images/xgboost2.png)
@@ -45,7 +45,7 @@ A plot is produced to see both training and validation error.
 A horizontal bar plot is used to see the importance of feature (top 20). 
 ![alt text](images/xgboost4.png)
 
-### 3. LightBGM
+## 3. LightBGM
 Similar structure as XGBoost section, but with LightBGM algorithm.
 ![alt text](images/lightgbm.png)
 ![alt text](images/lightgbm2.png)
