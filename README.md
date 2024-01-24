@@ -52,7 +52,7 @@ A plot is produced to see both training and validation error. The best iteration
 A horizontal bar plot is also used to see the importance of feature (top 20). 
 ![alt text](images/xgboost4.png)
 
-It seems that xgboost determines the target (i.e power usage) 2 and 7 days ago are the major features that helps to predict future target.
+It seems that XGBoost determines the target (i.e power usage) 2 and 7 days ago are the major features that helps to predict future target.
 
 ## 3. LightBGM
 LightGBM algorithm is also applied with same settings as XGBoost:
@@ -62,5 +62,7 @@ LightGBM algorithm is also applied with same settings as XGBoost:
 The algorithm found that at iteration #489, best performance of the model is reached with MAE 62.77.
 ![alt text](images/lightgbm3.png)
 
-For the importance of features, the LightBGM indicates that there are no dominant features (while XGBoost indicates there are two features).
+For the importance of features, the LightBGM indicates that there are no dominant features (while XGBoost indicates there are two features):
 ![alt text](images/lightgbm4.png)
+
+It does seems that the predictions of LightGBM depends on all features instead of depending on few features.
