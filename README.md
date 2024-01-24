@@ -55,8 +55,12 @@ A horizontal bar plot is also used to see the importance of feature (top 20).
 It seems that xgboost determines the target (i.e power usage) 2 and 7 days ago are the major features that helps to predict future target.
 
 ## 3. LightBGM
-Similar structure as XGBoost section, but with LightBGM algorithm.
+LightGBM algorithm is also applied with same settings as XGBoost:
 ![alt text](images/lightgbm.png)
 ![alt text](images/lightgbm2.png)
+
+The algorithm found that at iteration #489, best performance of the model is reached with MAE 62.77.
 ![alt text](images/lightgbm3.png)
+
+For the importance of features, the LightBGM indicates that there are no dominant features (while XGBoost indicates there are two features).
 ![alt text](images/lightgbm4.png)
