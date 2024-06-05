@@ -1,5 +1,5 @@
 # ML-Project-Enefit
-This is a machine learning project (and a kaggle competition) that aims to build an energy prediction model; for reducing the imbalance costs due to the increasing number of prosumers.
+This is a machine learning project (and a kaggle competition) that aims to build an energy prediction model; for reducing the imbalance costs due to the increasing number of prosumers. The gradient-boosting frameworks XGBoost and LightGBM are used to perform the regression task. 
 
 The detail description can be found in:
 https://www.kaggle.com/competitions/predict-energy-behavior-of-prosumers
@@ -26,6 +26,7 @@ First of all, let's load up all datasets:
 
 For each dataset, its shape and first observation are printed out:
 ![alt text](images/load_data2.png)
+![alt text](images/load_data3.png)
 
 Data cleaning, sorting and grouping are then performed (The code is too long, please look at the code).
 
