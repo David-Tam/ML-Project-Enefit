@@ -35,22 +35,27 @@ Feature "data_block_id" is used for data splitting. Observations with data_block
 ![alt text](images/tr_val_data_splitting.png)
 
 From feature engineering, prediction can also be based on the energy usage ("target") certain days ago:
+
 ![alt text](images/features.png)
 
 At the end, "Target" (energy comsumption/production amount) is the response variable, while 59 features are used as explanatory varibles:
+
 ![alt text](images/features2.png)
 
 ## 2. XGBoost
 Applying XGBoost algorithm to train on the training set and generate a fit for prediction. Categorical data are allowed and 1500 gradient boosted trees are used.
 
 Note that mean absolute error (MAE) is calculated for evaluation on the model performance. The algorithm will stop earlier if there is no obvious decrease in loss value for 100 iterations (early_stopping_round = 100) instead of going through all iterations.
+
 ![alt text](images/xgboost.png)
 ![alt text](images/xgboost2.png)
 
 A plot is produced to see both training and validation error. The best iteration is round #278 and the corresponding MAE is 61.55.
+
 ![alt text](images/xgboost3.png)
 
-A horizontal bar plot is also used to see the importance of feature (top 20). 
+A horizontal bar plot is also used to see the importance of feature (top 20).
+
 ![alt text](images/xgboost4.png)
 
 It seems that XGBoost determines the target (i.e power usage) 2 and 7 days ago are the major features that helps to predict future target.
