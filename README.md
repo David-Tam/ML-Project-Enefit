@@ -28,7 +28,7 @@ For each dataset, its shape and first observation are printed out:
 ![alt text](images/load_data2.png)
 ![alt text](images/load_data3.png)
 
-Data cleaning, sorting and grouping are then performed (The code is too long, please look at the code).
+Data cleaning, sorting and grouping are then performed (The code is too long, please take a look at the code).
 
 Feature "data_block_id" is used for data splitting. Observations with data_block_id = 0 to 499 are for training while the rest are for validation. 78.25% of the data was used for training.
 
